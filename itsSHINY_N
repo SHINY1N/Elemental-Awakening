@@ -1,7 +1,9 @@
 local plr = game.Players.LocalPlayer
 _G.a = true
 while _G.a == true do
-wait()
-print("Get Logged EZEZEZEZEZEZEZEZ")
+wait(0.001)
+game:GetService("ReplicatedStorage").Events.Spin:FireServer()
+end
 
+wait(120)
 plr:Kick("You are not Whitelisted, Please ask for permission before using it")
